@@ -28,5 +28,6 @@ jobs:  # 定义工作流程的任务
       uses: peaceiris/actions-gh-pages@v3  # 使用 `peaceiris` 提供的 GitHub Pages 部署工具
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的自动生成的 Token
+        publish_branch: gh-pages
         publish_dir: ./public  # 指定要部署的文件夹，Hexo 默认生成到 `public` 文件夹
 

@@ -112,5 +112,5 @@ theme: icarus
 deploy:
   type: git
   repo: git@github.com:StayhungryCreative/StayhungryCreative.github.io.git
-  branch: gh-pages #master
+  branch: gh-pages #master 静态文件生成后推送到的分支
   keep_files: true
