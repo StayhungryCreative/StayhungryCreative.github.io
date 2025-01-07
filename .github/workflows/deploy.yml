@@ -3,7 +3,7 @@ name: Deploy Hexo Blog  # Workflow 的名称，可自由修改为更具描述性
 on:  # 定义触发条件
   push:  # 当发生 push 操作时触发
     branches:  # 监控哪些分支
-      - master # main  # 这里默认是主分支（通常是 `main`），如果你的分支名是 `master` 或其他名称，需要改成对应分支名
+      - main  # 这里默认是主分支（通常是 `main`），如果你的分支名是 `master` 或其他名称，需要改成对应分支名
 
 jobs:  # 定义工作流程的任务
   build:  # 工作任务的名称，可自由命名
