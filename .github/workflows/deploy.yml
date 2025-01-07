@@ -1,0 +1,32 @@
+name: Deploy Hexo Blog  # Workflow 的名称，可自由修改为更具描述性的名字
+
+on:  # 定义触发条件
+  push:  # 当发生 push 操作时触发
+    branches:  # 监控哪些分支
+      - master # main  # 这里默认是主分支（通常是 `main`），如果你的分支名是 `master` 或其他名称，需要改成对应分支名
+
+jobs:  # 定义工作流程的任务
+  build:  # 工作任务的名称，可自由命名
+    runs-on: ubuntu-latest  # 指定运行环境为最新的 Ubuntu 系统
+
+    steps:  # 任务的步骤
+    - name: Checkout code  # 步骤名称：检查出代码
+      uses: actions/checkout@v3  # 使用 GitHub 提供的官方代码检查工具
+
+    - name: Setup Node.js  # 步骤名称：设置 Node.js 环境
+      uses: actions/setup-node@v3  # 使用 GitHub 提供的 Node.js 设置工具
+      with:
+        node-version: '23' #'16'  # 指定 Node.js 版本（可以改成 Hexo 支持的其他版本，如 14 或 18）
+
+    - name: Install dependencies  # 步骤名称：安装依赖
+      run: npm install  # 在项目中安装 Hexo 和插件的依赖
+
+    - name: Build Hexo  # 步骤名称：生成静态文件
+      run: npx hexo generate  # 运行 Hexo 命令，生成 `public` 文件夹
+
+    - name: Deploy to GitHub Pages  # 步骤名称：部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3  # 使用 `peaceiris` 提供的 GitHub Pages 部署工具
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的自动生成的 Token
+        publish_dir: ./public  # 指定要部署的文件夹，Hexo 默认生成到 `public` 文件夹
+
