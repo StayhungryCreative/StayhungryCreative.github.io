@@ -1,10 +1,10 @@
 ---
-title: Gitlab使用教程
+title: Git 使用教程
 date: 2025-01-05 18:07:06
-excerpt: gitlab仓库代码管理教程，经常使用！
+excerpt: Github 仓库代码管理教程，经常使用！
 tags:
-  - ubuntu
-  - gitlab
+  - Git
+  - Github
 categories:
   - 工具
 ---
@@ -23,7 +23,7 @@ git config -l # 或者 git config --list
 
 
 
-2、git init 将**本地当前目录初始化**为Git仓库
+2、git init 将**本地当前目录初始化**为**本地 Git 仓库**
 
 ```bash
 git init #如果没有初始化为 git 仓库，后面所有操作都会报错
@@ -31,15 +31,16 @@ git init #如果没有初始化为 git 仓库，后面所有操作都会报错
 
 
 
-3、git add 将**本地文件**到缓存区
+3、git add 将**本地文件添加到缓存区**
 
 ```bash
 git add --all #最简单无脑的操作，区域所有文件修改都提交，包括删除文件
+git add . # 同上，但不记录删除操作
 ```
 
 
 
-4、git commit 提交本地更改
+4、git commit **提交本地文件的更改**到**本地 Git 仓库**
 
 ```bash
 git commit -m "the 1st try"
@@ -47,7 +48,7 @@ git commit -m "the 1st try"
 
 
 
-5、git remote **添加远程Git仓库**	
+5、git remote **添加远程 Git 仓库**	
 
 ```bash
 # 添加远程仓库并指定名称
@@ -67,7 +68,7 @@ git remote -v
 
 
 
-6、git push 将本地Git仓库的更新**推送到远程Git仓库**
+6、git push 将**本地 Git 仓库**的更新**推送到远程Git仓库**
 
 ```python
 git push <远程仓库名> <本地仓库分支名>:<远程仓库分支名> 

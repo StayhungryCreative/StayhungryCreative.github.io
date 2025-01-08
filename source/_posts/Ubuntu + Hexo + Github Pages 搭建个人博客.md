@@ -1,10 +1,11 @@
 ---
-title: Ubuntu搭建个人博客
+title: Ubuntu + Hexo + Github Pages 搭建个人博客
 date: 2025-01-05 15:55:01
 excerpt: 搭建博客的步骤，一路踩坑，填，再填，越挫越勇
 tags:
-  - ubuntu
-  - hexo
+  - Github Pages
+  - Hexo
+  - Ubuntu
 categories:
   - 工具
 ---
@@ -19,11 +20,7 @@ categories:
 
 
 
-资料讲的很详细，因此我只简单总结，大概会是我gitlab的第一篇博文。
-
-完成 1-3 将获得一个空白的 gitlab 博客界面
-
-完成 4 将创建自己的第一篇博客，撒花！！！
+资料讲的很详细，因此我只简单总结不熟练的步骤。完成 1-3 将获得一个空白的 gitlab 博客界面，完成 4 将创建自己的第一篇博客，撒花！！！
 
 ## 1、预备工作
 
