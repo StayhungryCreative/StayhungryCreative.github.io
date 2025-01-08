@@ -3,8 +3,8 @@ title: imu_tk配置教程
 date: 2024-11-07 21:00:00
 excerpt: imu标定工作的环境配置步骤
 tags:
-  - ubuntu
   - imu标定
+  - Ubuntu
 categories:
   - 工具
 ---
