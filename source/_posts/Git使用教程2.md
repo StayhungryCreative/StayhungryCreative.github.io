@@ -1,5 +1,5 @@
 ---
-title: Git使用教程2——标签和分支
+title: Git使用教程2：关于标签和分支
 date: 2025-02-04 10:45:20
 excerpt: Github 仓库代码管理教程，经常使用！
 tags:
