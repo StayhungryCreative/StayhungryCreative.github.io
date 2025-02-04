@@ -1,5 +1,5 @@
 ---
-title: Git 使用教程
+title: Git 使用教程1
 date: 2025-01-05 18:07:06
 excerpt: Github 仓库代码管理教程，经常使用！
 tags:
@@ -9,7 +9,7 @@ categories:
   - 工具
 ---
 
-按照 git 常用的操作来记录
+## git 常用操作
 
 1、git config 配置本机信息
 
@@ -87,4 +87,10 @@ git push -u origin master
 ```
 
 
+
+7、git clone 克隆远端仓库数据到本地
+
+```python
+git clone ssh://git@xxx.xxx:/project.git
+```
 
